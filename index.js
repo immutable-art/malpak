@@ -1,4 +1,4 @@
-export default function pwn() {
+export default function pwn(anything) {
     console.log("malpak is here");
-    return "pwn";
+    return "pwn: ${anything}";
 }
