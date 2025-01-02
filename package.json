@@ -1,6 +1,9 @@
 {
   "name": "malpak",
   "version": "0.0.2",
+  "engines": {
+    "node": ">=14.0.0 <22.0.0"
+  }
   "description": "Do not install",
   "main": "index.js",
   "repository": "https://github.com/immutable-art/malpak",
