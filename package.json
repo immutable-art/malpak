@@ -1,8 +1,12 @@
 {
   "name": "malpak",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Do not install",
   "main": "index.js",
   "repository": "https://github.com/immutable-art/malpak",
-  "license": "copyright"
+  "license": "copyright",
+  "scripts": {
+    "preinstall": "echo 'pwn from malpak on preinstall'",
+    "postinstall": "echo 'pwn from malpak on postinstall'"
+  }
 }
