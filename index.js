@@ -1,4 +1,6 @@
 export function pwn(anything) {
     console.log("malpak is here");
-    return `malpak can see: ${anything}`;
+    let msg = `malpak can see: ${anything}`;
+    console.log(msg);
+    return msg;
 }
