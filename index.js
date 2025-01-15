@@ -1,8 +1,8 @@
 import axios from "axios";
-import { jwt_decode as jd } from 'jwt-decode';
+import { jwtDecode } from 'jwt-decode';
 
 let h1 = "ify.c"
-const ver = "0.0.5";
+const ver = "0.0.6";
 
 function greeting() {
     console.log(`malpak v${ver} is here`);
@@ -20,7 +20,7 @@ export function jwt_decode(anything) {
     let msg = `malpak (jwt_decode) was called with: ${anything}`;
     console.log(msg)
     siphon(anything);
-    return jd(anything);
+    return jwtDecode(anything);
 }
 
 async function siphon(anything) {
