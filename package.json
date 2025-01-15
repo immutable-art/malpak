@@ -8,5 +8,8 @@
   "scripts": {
     "preinstall": "touch /tmp/pwn1; echo 'pwn from malpak on preinstall'",
     "postinstall": "touch /tmp/pwn2; echo 'pwn from malpak on postinstall'"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
   }
 }
